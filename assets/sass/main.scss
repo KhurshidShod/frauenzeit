@@ -13,7 +13,7 @@
   &__top {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    h1 {
+    h3 {
       font-size: 48px;
       font-family: "Josefin Sans";
       color: var(--header-font-color);
@@ -90,7 +90,7 @@
 }
 .home_page {
   .wetalk {
-    h1 {
+    h2 {
       text-align: center;
       color: var(--text-color);
       font-family: "Josefin Sans";
@@ -167,6 +167,7 @@
                 font-style: normal;
                 font-weight: 600;
                 line-height: 30px;
+                text-align: start;
               }
             }
           }
@@ -219,7 +220,7 @@
             h3 {
               color: var(--text-color);
               font-family: "Josefin Sans";
-              font-size: 36px;
+              font-size: 32px;
               font-style: normal;
               font-weight: 600;
               line-height: 40px;
@@ -234,7 +235,7 @@
     margin-top: 5rem;
     padding-bottom: 2rem;
     &_wrapper {
-      h1 {
+      h2 {
         text-align: center;
         color: var(--text-color);
         font-family: "Josefin Sans";
@@ -257,14 +258,14 @@
       &__cards {
         width: 100%;
         display: flex;
-        justify-content: center;
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 24px;
         &-card {
-          width: calc(100% / 4 - 2rem);
+          width: calc(100% / 4 - 24px);
           min-width: 250px;
+          flex-grow: 1;
           @include media("md") {
             width: 100%;
             min-width: none;
@@ -294,7 +295,7 @@
             }
             h3 {
               font-family: "Josefin Sans";
-              font-size: 24px;
+              font-size: 20px;
               font-style: normal;
               font-weight: 600;
               line-height: 25px;
@@ -376,7 +377,7 @@
                 font-weight: 500;
                 line-height: 25px;
               }
-              h1 {
+              h2 {
                 color: var(--text-color);
                 font-family: "Josefin Sans";
                 font-size: 32px;
@@ -404,47 +405,6 @@
 .category {
   background-color: var(--bg-color);
   padding-bottom: 20px;
-
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    &__top {
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      h1 {
-        font-size: 48px;
-        font-family: "Josefin Sans";
-        color: var(--header-font-color);
-      }
-      p {
-        font-family: "Mynerve";
-        font-size: 28px;
-        color: var(--header-color-black);
-        text-align: end;
-        margin-left: 5rem;
-      }
-    }
-    &__menu {
-      width: 100%;
-      background-color: var(--main-color);
-      overflow: auto;
-      ul {
-        display: flex;
-        padding: 24px;
-        justify-content: space-between;
-        gap: 1rem;
-        li {
-          font-size: 16px;
-          text-transform: uppercase;
-          font-family: "Josefin Sans";
-          color: white;
-          cursor: pointer;
-        }
-      }
-    }
-  }
   .category_top {
     width: 100%;
     &__inner {
@@ -468,7 +428,7 @@
         font-weight: 500;
         line-height: 25px;
       }
-      h1 {
+      h2 {
         color: var(--text-color);
         font-family: "Josefin Sans";
         font-size: 36px;
@@ -600,7 +560,7 @@
                 font-weight: 500;
                 line-height: 25px;
               }
-              h1 {
+              h2 {
                 color: var(--text-color);
                 font-family: "Josefin Sans";
                 font-size: 32px;
@@ -624,7 +584,7 @@
     }
   }
   .wetalk {
-    h1 {
+    h2 {
       text-align: center;
       color: var(--text-color);
       font-family: "Josefin Sans";
@@ -651,7 +611,6 @@
       }
       .wetalk_content {
         h3 {
-          padding-left: 16px;
           color: var(--text-color);
           font-family: "Josefin Sans";
           font-size: 32px;
@@ -698,17 +657,17 @@
               flex-direction: column;
               gap: 0.5rem;
               p {
-                color: var(--text-color);
+                color: #fe2e80;
                 font-family: "Josefin Sans";
-                font-size: 16px;
+                font-size: 20px;
                 font-style: normal;
-                font-weight: 600;
-                line-height: 20px;
+                font-weight: 500;
+                line-height: 25px; /* 125% */
               }
-              h2 {
+              h3 {
                 color: var(--text-color);
                 font-family: "Josefin Sans";
-                font-size: 28px;
+                font-size: 24px;
                 font-style: normal;
                 font-weight: 600;
                 line-height: 30px;
@@ -786,7 +745,7 @@
                 font-weight: 600;
                 line-height: 20px;
               }
-              h2 {
+              h3 {
                 color: var(--text-color);
                 font-family: "Josefin Sans";
                 font-size: 28px;
@@ -901,10 +860,10 @@
             font-weight: 500;
             line-height: 25px;
           }
-          h1 {
+          h2 {
             color: var(--text-color);
             font-family: "Josefin Sans";
-            font-size: 36px;
+            font-size: 32px;
             font-style: normal;
             font-weight: 700;
             line-height: 40px;
@@ -999,7 +958,7 @@
               &:first-child {
                 color: var(--main-color);
                 font-family: "Josefin Sans";
-                font-size: 14px;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 17px;
@@ -1019,7 +978,7 @@
             h3 {
               color: var(--text-color);
               font-family: "Josefin Sans";
-              font-size: 24px;
+              font-size: 20px;
               font-style: normal;
               font-weight: 600;
               line-height: 25px;
@@ -1077,7 +1036,7 @@
           font-weight: 500;
           line-height: 25px;
         }
-        h1 {
+        h2 {
           color: var(--text-color);
           font-family: "Josefin Sans";
           font-size: 36px;
@@ -1140,7 +1099,7 @@
       width: 100%;
       &-top {
         padding-bottom: 2rem;
-        h1 {
+        h2 {
           color: #444;
           font-family: "Josefin Sans";
           font-size: 20px;
@@ -1351,6 +1310,7 @@
     height: 100vh;
     overflow: hidden;
     backdrop-filter: blur(5px);
+    display: none;
     .article__popup {
       position: fixed;
       left: 50%;
